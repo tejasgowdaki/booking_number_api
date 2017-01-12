@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'httparty'
 gem 'rabl'
+gem 'apipie-rails', '~> 0.3.7'
  
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production

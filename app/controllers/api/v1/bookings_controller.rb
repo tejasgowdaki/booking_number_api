@@ -3,6 +3,7 @@ module Api
 		class BookingsController < ApplicationController		
 			skip_before_action :verify_authenticity_token
 
+			api :GET, "/bookings/number", "This will give the Booking Number"
 			def number
 				first_three = Array.new(3){rand(10..35).to_s(36)}.join.upcase
 				while true
